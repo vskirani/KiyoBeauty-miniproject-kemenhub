@@ -6,12 +6,7 @@ export default function Sidebar() {
 
       {/* Menu */}
       <nav className="flex flex-col gap-4 text-gray-700">
-        <a
-          href="#"
-          className="hover:text-blue-600 transition font-medium"
-        >
-          Overview
-        </a>
+      
 
         <a
           href="#"
