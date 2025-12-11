@@ -1,6 +1,6 @@
 export default function Navbar() {
   return (
-    <header className="fixed left-64 top-0 w-[calc(100%-16rem)] h-16 bg-white border-b shadow-sm flex items-center justify-between px-6 z-50">
+    <header className="fixed left-16 top-0 w-[calc(100%-4rem)] h-16 bg-white border-b shadow-sm flex items-center justify-between px-6 z-50">
       
       {/* Title */}
       <h2 className="text-xl font-semibold tracking-tight">
