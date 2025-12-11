@@ -35,12 +35,12 @@ export default function ProductCard({ item }) {
             <p className="text-gray-400 text-sm line-through">
               ${item.price}
             </p>
-            <p className="text-blue-600 font-bold text-lg">
+            <p className="text-[#6BC779] font-bold text-lg">
               ${discountedPrice}
             </p>
           </div>
         ) : (
-          <p className="text-blue-600 font-bold text-lg">
+          <p className="text-[#6BC779] font-bold text-lg">
             ${item.price}
           </p>
         )}

@@ -36,11 +36,11 @@ export default function ListProduct() {
           Previous
         </button>
 
-        <span className="font-semibold">Page {page}</span>
+        <span className=" text-[#91C6FA]">Page {page}</span>
 
         <button
           onClick={nextPage}
-          className="px-4 py-2 bg-blue-500 text-white hover:bg-blue-600 rounded-md"
+          className="px-4 py-2 bg-[#91C6FA] text-white hover:bg-[#4183C4] rounded-md"
         >
           Next
         </button>
