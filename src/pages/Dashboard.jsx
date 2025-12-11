@@ -1,9 +1,16 @@
 import ListProduct from "../components/ListProduct";
 
+
 export default function Dashboard() {
   return (
-    <div className="ml-64 mt-20 p-6">
-      <h1 className="text-3xl font-bold mb-4">Product Catalog</h1>
+    <div className="ml-64 mt-16 p-8">
+      <h1 className="text-3xl font-bold tracking-tight mb-2">
+        Product List
+      </h1>
+
+      <p className="text-gray-600 mb-6">
+        Temukan berbagai produk kecantikan pilihan yang kami tampilkan langsung dari sumber data terpercaya
+      </p>
 
       <ListProduct />
     </div>
