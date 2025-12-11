@@ -1,17 +1,17 @@
-import { useEffect, useState } from "react";
+import { use, useEffect, useState } from "react";
 import ProductCard from "./ProductCard";
+import { fetchProducts } from "../services/productServices";
+
 
 export default function ListProduct() {
   const [products, setProducts] = useState([]);
   const [page, setPage] = useState(1);
-  
   const limit =8;
 
   useEffect(() => {
-    fetch(`https://dummyjson.com/products?limit=${limit}&skip=${(page - 1) * limit}`)
-      .then((res) => res.json())
-      .then((data) => setProducts(data.products));
-  }, [page]);
+        fetchProducts(page, limit).then(setProducts)
+    }, [page]);
+
 
   const nextPage = () => setPage((prev) => prev + 1);
   const prevPage = () => page > 1 && setPage((prev) => prev - 1);
